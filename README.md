@@ -34,8 +34,8 @@ To test the model for a given video, follow these steps:
 - `--videoname` or `-vn`: Specify the name of the video file.
 - `--framepersecond` or `-fps`: Specify the number of frames to process per second.
 
-For more help run:
-    
+3. For more help run:
+
     ```shell
         python test.py 
             --model=./models/model_Final_DMOS.h5 
@@ -43,19 +43,3 @@ For more help run:
             --videoname=video1.mp4 
             --framepersecond=1
     ```
-
-
-<!-- ## How To Use
-
-    - To test the model for a given video follow this process:
-    <pre>
-        python test.py 
-            --model=./models/model_Final_DMOS.h5 
-            --videopath=./videos/
-            --videoname=video1.mp4 
-            -framepersecond=1
-    </pre>
-    - --model or -m to select the model
-    - --videopath or -vp for the video path folder
-    - --videoname or -vn for the video name
-    - --framepersecond or -fps for the number of frame per second to take -->
