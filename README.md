@@ -62,7 +62,7 @@ The models NR-GVQM, NR-GVSQI, NDNetGaming are described in [^3]
 ##### GVSET [^4]:
 
 
-|    Methods   |SROCC            | PLCC            | KROCC        |
+|    Methods   |SRCC            | PLCC            | KRCC        |
 |:------------:|:---------------------:|:--------------------:|:-------------------:|
 | NR-GVQM      | 0.870       | 0.890          | -   |
 | NR-GVSQI     | 0.860   | 0.870       | -     |
@@ -73,7 +73,7 @@ The models NR-GVQM, NR-GVSQI, NDNetGaming are described in [^3]
 ##### KUGVD [^5]:
 
 
-|    Methods   |SROCC            | PLCC            | KROCC        |
+|    Methods   |SRCC            | PLCC            | KRCC        |
 |:------------:|:---------------------:|:--------------------:|:-------------------:|
 | NR-GVQM      | 0.910       | 0.910          | -   |
 | NR-GVSQI      | 0.880   | 0.890       | -     |
