@@ -6,6 +6,10 @@
 CNN-based model that accurately assesses the quality of videos in the cloud gaming domain. 
 The process consists of three essential phases: Pre training, Fine-tuning, and Video Pooling Quality Prediction Phase.
 
+- The first phase involves pre-training the model using a constructed dataset labeled with the full reference metric LPIPS[^1].
+- In the second phase, the model is fine-tuned using Real MOS scores obtained from the GISET[^2] dataset.
+- Finally, the frame-level scores are pooled together in the final phase to calculate the overall video score.
+
 <img src="images/phase1_2.png" alt="Comprehensive Overview of the Proposed Approach: Exploring the Initial Two Stages" width="500">
 <img src="images/video_phase.png" alt="Comprehensive Overview of the Proposed Approach: Exploring The Video Pooling Quality Prediction Stage" width="500">
 <!-- ![Comprehensive Overview of the Proposed Approach: Exploring the Initial Two Stages](images/phase1_2.png) -->
@@ -39,3 +43,15 @@ To test the model for a given video, follow these steps:
     ```shell
         python test.py -h
     ```
+
+
+[^1]: @inproceedings{zhang2018perceptual, title={The Unreasonable
+Effectiveness of Deep Features as a Perceptual Metric}, author={Zhang,
+Richard and Isola, Phillip and Efros, Alexei A and Shechtman, Eli and
+Wang, Oliver}, booktitle={CVPR}, year={2018} }
+
+[^2]: @inproceedings{NDNetgaming, title={{NDNetGaming - Development of a
+No-Reference Deep CNN for Gaming Video Quality Prediction}},
+author={Utke, Markus and Zadtootaghaj, Saman and Schmidt, Steven and
+Bosse, Sebastian and Moeller, Sebastian }, booktitle={Multimedia Tools
+and Applications}, year={2020}, organization={Springer}, }
