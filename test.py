@@ -1,5 +1,6 @@
 import tensorflow as tf
 import numpy as np
+import os
 import cv2
 from PIL import Image
 from tqdm import tqdm
@@ -204,6 +205,15 @@ def test_image(model, imagepath, imagename):
 def test_video(model, videopath, videoname, number_frames_per_second):
 
     BQPGV = tf.keras.models.load_model(model)
+
+    file_path = os.path.join(videopath, videoname)
+
+    if os.path.exists(file_path):
+       pass
+    else:
+      print(f"The Video '{file_path}' does not exist.")
+      return
+
     scores = video_pooling(BQPGV, videopath, videoname, number_frames_per_second)
 
 
