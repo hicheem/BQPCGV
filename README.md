@@ -45,13 +45,6 @@ To test the model for a given video, follow these steps:
     ```
 
 
-[^1]: @inproceedings{zhang2018perceptual, title={The Unreasonable
-Effectiveness of Deep Features as a Perceptual Metric}, author={Zhang,
-Richard and Isola, Phillip and Efros, Alexei A and Shechtman, Eli and
-Wang, Oliver}, booktitle={CVPR}, year={2018} }
+[^1]: @Zhang, Richard, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. "The unreasonable effectiveness of deep features as a perceptual metric." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 8756-8765. 2018.
 
-[^2]: @inproceedings{NDNetgaming, title={{NDNetGaming - Development of a
-No-Reference Deep CNN for Gaming Video Quality Prediction}},
-author={Utke, Markus and Zadtootaghaj, Saman and Schmidt, Steven and
-Bosse, Sebastian and Moeller, Sebastian }, booktitle={Multimedia Tools
-and Applications}, year={2020}, organization={Springer}, }
+[^2]: Utke, Markus, Saman Zadtootaghaj, Steven Schmidt, Sebastian Bosse, and Sebastian Möller. "NDNetGaming - Development of a No-Reference Deep CNN for Gaming Video Quality Prediction." In Multimedia Tools and Applications, vol. 79, no. 17, pp. 15003–15024. Springer Nature Switzerland, 2020.
