@@ -20,16 +20,20 @@ To test the model for a given video, follow these steps:
 1. Run the `test.py` script with the following command:
 
     ```shell
-        python test.py --model=./models/model_Final_DMOS.h5 --videopath=./videos/ --videoname=video1.mp4 --framepersecond=1
+        python test.py 
+            --model=./models/model_Final_DMOS.h5 
+            --videopath=./videos/ 
+            --videoname=video1.mp4 
+            --framepersecond=1
     ```
 
-2. Use the following command-line options to configure the test
-| Option                   | Description                                                |
-|--------------------------|------------------------------------------------------------|
-| `--model` or `-m`        | Specify the path to the model file.                        |
-| `--videopath` or `-vp`   | Specify the folder path where the video is located.        |
-| `--videoname` or `-vn`   | Specify the name of the video file.                        |
-| `--framepersecond` or `-fps` | Specify the number of frames to process per second.    |
+2. Use the following command-line options to configure the test:
+
+- `--model` or `-m`: Specify the path to the model file.
+- `--videopath` or `-vp`: Specify the folder path where the video is located.
+- `--videoname` or `-vn`: Specify the name of the video file.
+- `--framepersecond` or `-fps`: Specify the number of frames to process per second.
+
 
 
 <!-- ## How To Use
