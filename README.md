@@ -34,6 +34,8 @@ To test the model for a given video, follow these steps:
 - `--videoname` or `-vn`: Specify the name of the video file.
 - `--framepersecond` or `-fps`: Specify the number of frames to process per second.
 
+For more help run:
+    <pre>python test.py -h</pre>
 
 
 <!-- ## How To Use

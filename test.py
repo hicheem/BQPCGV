@@ -237,7 +237,7 @@ if __name__== "__main__":
     parser.add_argument('-vp', '--videopath', action='store', dest='videopath', default=r'./videos/' ,
                     help='Specify the folder video path, e.g. ./videos/ ')
                     
-    parser.add_argument('-vn', '--videoname', action='store', dest='videoname', default='sample1.mp4' ,
+    parser.add_argument('-vn', '--videoname', action='store', dest='videoname', default='video1.mp4' ,
                     help='Specify the folder the video name, e.g. sample.mp4')
     parser.add_argument('-fps', '--framepersecond', action='store', dest='number_frames_per_second', default='1' ,
                     help='Specify the selected frames_per_second , e.g. 1')
