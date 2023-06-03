@@ -13,7 +13,7 @@ def get_spearman_rankcor(y_true, y_pred):
                        tf.cast(y_true, tf.float32)], Tout = tf.float32) )
 
 weight_model = tf.keras.applications.DenseNet201(weights='imagenet', include_top=False,input_shape=(299,299,3),pooling='avg')
-densenet =  tf.keras.models.load_model('densenet_v2.h5',custom_objects={'get_spearman_rankcor':get_spearman_rankcor})
+densenet =  tf.keras.models.load_model('models/weight_model/densenet_v2.h5',custom_objects={'get_spearman_rankcor':get_spearman_rankcor})
 
 def calculate_weights(patches):
 
