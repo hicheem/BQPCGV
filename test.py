@@ -67,7 +67,7 @@ def image_score(model, image_path, image_name):
 def video_pooling(model, video_path, video_name, number_frames_per_second):
 
   print(video_name)
-  video = cv2.VideoCapture(video_path + video_name)
+  video = cv2.VideoCapture(os.path.join(video_path, video_name))
   # Get video properties
   fps = video.get(cv2.CAP_PROP_FPS)
   width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
