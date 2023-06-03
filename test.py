@@ -189,8 +189,8 @@ def video_pooling(model, video_path, video_name, number_frames_per_second):
   return scores
 
 def test_image(model, imagepath, imagename):
-    BQPGV = tf.keras.models.load_model(model)
-    scores = image_score(BQPGV, imagepath, imagename)
+    BQPCGV = tf.keras.models.load_model(model)
+    scores = image_score(BQPCGV, imagepath, imagename)
 
     print("MOS based on Weighted Average Aggregation:",scores['mos_w'])
     print("MOS based on Average Aggregation:",scores['mos_avg'])
@@ -204,7 +204,7 @@ def test_image(model, imagepath, imagename):
 
 def test_video(model, videopath, videoname, number_frames_per_second):
 
-    BQPGV = tf.keras.models.load_model(model)
+    BQPCGV = tf.keras.models.load_model(model)
 
     file_path = os.path.join(videopath, videoname)
 
@@ -214,7 +214,7 @@ def test_video(model, videopath, videoname, number_frames_per_second):
       print(f"The Video '{file_path}' does not exist.")
       return
 
-    scores = video_pooling(BQPGV, videopath, videoname, number_frames_per_second)
+    scores = video_pooling(BQPCGV, videopath, videoname, number_frames_per_second)
 
 
     print("MOS based on Weighted Average Frame Level & Average Pooling Video Level:",scores['mos_w_avg'])
