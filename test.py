@@ -25,8 +25,7 @@ def calculate_weights(patches):
 
 def image_score(model, image_path, image_name):
     
-    print(image_name)
-    
+    print(image_name)    
     image = Image.open(image_path + image_name).convert('RGB')
     image = np.array(image)
 
