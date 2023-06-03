@@ -1,4 +1,5 @@
 ffmpeg-python
+lpips
 numpy
 PIL
 matplotlib
@@ -8,4 +9,3 @@ Torch
 argparse
 pandas
 cv2
-lpips
