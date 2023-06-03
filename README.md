@@ -22,6 +22,7 @@ This repository hosts the code for the complete development process of the three
 - [Requirements](#requirements)
 - [How To Use](#how-to-use)
 - [Performance Benchmark](#performance-benchmark)
+- [References](#references)
 
 ## Requirements
 ```python
@@ -80,6 +81,8 @@ The models NR-GVQM, NR-GVSQI, NDNetGaming are described in [^3]
 | NDNetGaming      | 0.929  | 0.934 | - |
 | **BQPCGV**      |**0.932** | **0.937** | **0.795** |
 
+
+## References
 
 [^1]: @Zhang, Richard, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. "The unreasonable effectiveness of deep features as a perceptual metric." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 8756-8765. 2018.
 
