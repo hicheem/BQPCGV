@@ -35,7 +35,7 @@ To test the model for a given video, follow these steps:
 - `--framepersecond` or `-fps`: Specify the number of frames to process per second.
 
 For more help run:
-    <pre>python test.py -h</pre>
+    ```shell python test.py -h ```
 
 
 <!-- ## How To Use
