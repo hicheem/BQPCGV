@@ -1,11 +1,7 @@
-ffmpeg-python
-lpips
+tensorflow>=2.5.0
 numpy
+opencv
 PIL
-matplotlib
-tensorflow
-Keras
-Torch
+tqdm
+scipy
 argparse
-pandas
-cv2

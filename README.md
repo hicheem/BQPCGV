@@ -17,19 +17,30 @@ The process consists of three essential phases: Pre training, Fine-tuning, and V
 
 This repository hosts the code for the complete development process of the three stages. It also provides testing capabilities tailored to your unique use case.
 
-## How to Use
+## Table of Contents
+
+- [Requirements](#requirements)
+- [How To Use](#how-to-use)
+- [Performance Benchmark](#performance-benchmark)
+
+## Requirements
+```python
+pip install -r requirements.txt
+```
+
+## How To Use
 
 To test the model for a given video, follow these steps:
 
 1. Run the `test.py` script with the following command:
 
-    ```shell
-        python test.py 
-            --model=./models/model_Final_DMOS.h5 
-            --videopath=./videos/ 
-            --videoname=video1.mp4 
-            --framepersecond=1
-    ```
+```shell
+    python test.py 
+        --model=./models/model_Final_DMOS.h5 
+        --videopath=./videos/ 
+        --videoname=video1.mp4 
+        --framepersecond=1
+```
 
 2. Use the following command-line options to configure the test:
 
@@ -44,7 +55,38 @@ To test the model for a given video, follow these steps:
         python test.py -h
     ```
 
+## Performance Benchmark
+
+The models NR-GVQM, NR-GVSQI, NDNetGaming are described in [^3]
+
+##### GVSET [^4]:
+
+
+|    Methods   |SROCC            | PLCC            | KROCC        |
+|:------------:|:---------------------:|:--------------------:|:-------------------:|
+| NR-GVQM      | 0.870       | 0.890          | -   |
+| NR-GVSQI     | 0.860   | 0.870       | -     |
+| NDNetGaming   | 0.933  | 0.934 | - |
+| BQPCGV      |0.952 | 0.954 | 0.828 |
+
+
+##### KUGVD [^5]:
+
+
+|    Methods   |SROCC            | PLCC            | KROCC        |
+|:------------:|:---------------------:|:--------------------:|:-------------------:|
+| NR-GVQM      | 0.910       | 0.910          | -   |
+| NR-GVSQI      | 0.880   | 0.890       | -     |
+| NDNetGaming      | 0.929  | 0.934 | - |
+| BQPCGV      |0.932 | 0.937 | 0.795 |
+
 
 [^1]: @Zhang, Richard, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. "The unreasonable effectiveness of deep features as a perceptual metric." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 8756-8765. 2018.
 
 [^2]: Utke, Markus, Saman Zadtootaghaj, Steven Schmidt, Sebastian Bosse, and Sebastian Möller. "NDNetGaming - Development of a No-Reference Deep CNN for Gaming Video Quality Prediction." In Multimedia Tools and Applications, vol. 79, no. 17, pp. 15003–15024. Springer Nature Switzerland, 2020.
+
+[^3]: Zadtootaghaj (2022). Quality of Experience Modeling for Cloud Gaming Services. Springer.
+
+[^4]: Barman et al. (2018). GamingVideoSET: a dataset for gaming video streaming applications. In 2018 16th Annual Workshop on Network and Systems Support for Games (NetGames), pages 1-6. IEEE.
+
+[^5]: Barman et al. (2019). No-reference video quality estimation based on machine learning for passive gaming video streaming applications. IEEE Access, 7, 74511-74527. IEEE.

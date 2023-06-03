@@ -1,13 +1,9 @@
 import tensorflow as tf
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import cv2
 from PIL import Image
 from tqdm import tqdm
 from scipy.stats import spearmanr
-from scipy.stats import spearmanr
-import numpy as np
 import argparse
 from tools import hysteresis_pooling
 
