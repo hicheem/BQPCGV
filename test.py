@@ -238,7 +238,7 @@ if __name__== "__main__":
     parser = argparse.ArgumentParser()
     
     parser.add_argument('-m', '--model', action='store', dest='model', default=r'./models/model_Final_DMOS.h5' ,
-                    help='Specify the model path , e.g. ./models/model_Final_DMOS.h5')
+                    help='Specify the model path , e.g. ./models/model_Final_DMOS.h5, default=./models/model_Final_DMOS.h5')
                     
     parser.add_argument('-vp', '--videopath', action='store', dest='videopath', default=r'./videos/' ,
                     help='Specify the folder video path, e.g. ./videos/ ')

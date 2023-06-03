@@ -37,7 +37,7 @@ To test the model for a given video, follow these steps:
 
 ```shell
     python test.py 
-        --model=./models/model_Final_DMOS.h5 
+        --model=./models/model_Final_DMOS.h5
         --videopath=./videos/ 
         --videoname=video1.mp4 
         --framepersecond=1
