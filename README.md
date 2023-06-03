@@ -1,7 +1,7 @@
 # Blind Quality Predictor for Cloud Gaming Videos (BQPCGV)
----
+
 ## Deep Learning based model Quality metric for Cloud Gaming Content
----
+
 
 CNN-based model that accurately assesses the quality of videos in the cloud gaming domain. 
 The process consists of three essential phases: Pre training, Fine-tuning, and Video Pooling Quality Prediction Phase.
