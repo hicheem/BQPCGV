@@ -11,7 +11,7 @@ The process consists of three essential phases: Pre training, Fine-tuning, and V
 - Finally, the frame-level scores are pooled together in the final phase to calculate the overall video score.
 
 <!-- ![Adaptive Figure](images/adaptive_figure.svg) -->
-<img src="images/proposal_d.svg" alt="Comprehensive Overview of the Proposed Approach" width="900">
+<img src="images/proposal.svg" alt="Comprehensive Overview of the Proposed Approach" width="900">
 <!-- <img src="images/video_phase.png" alt="Comprehensive Overview of the Proposed Approach: Exploring The Video Pooling Quality Prediction Stage" width="500"> -->
 <!-- ![Comprehensive Overview of the Proposed Approach: Exploring the Initial Two Stages](images/phase1_2.png) -->
 <!-- ![Comprehensive Overview of the Proposed Approach: Exploring The Video Pooling Quality Prediction Stage](images/video_phase.png) -->
